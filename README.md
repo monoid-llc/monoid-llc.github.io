@@ -1,5 +1,11 @@
-Monoid is a software development company specializing in mobile and web applications.
+Monoid is a software development company specializing in mobile and web
+applications founded by [this guy][me].
 
-Wanna chat? `curl http://monoid.io/say-hi | python` or just [e-mail me][email].
+Wanna chat?
+
+    curl http://monoid.io/say-hi | python
+
+...or just [email me][email].
 
 [email]: mailto:hi@monoid.io
+[me]: http://whatit.is
