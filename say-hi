@@ -1,17 +1,11 @@
 #!/usr/bin/env python2
-import os
-import select
-import signal
-import socket
-import sys
-import time
+import os, select, signal, socket, sys, time
 
 irc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 username = os.getlogin()
 hostname = socket.gethostname()
 
-if not sys.stdin.isatty():
-    sys.stdin = open('/dev/tty')
+if not sys.stdin.isatty(): sys.stdin = open('/dev/tty')
 
 def hello():
     irc.send('PRIVMSG zeekay :hello, i am from the internet!\r\n')
