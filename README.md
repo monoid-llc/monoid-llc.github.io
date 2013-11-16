@@ -3,7 +3,7 @@ applications founded by [this guy][me].
 
 Wanna chat?
 
-    curl http://monoid.io/say-hi | python
+    curl monoid.io/say-hi | python
 
 ...or just [email me][email].
 
