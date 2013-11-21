@@ -19,7 +19,13 @@ html
         p!= content
       footer
 
-  script
+  script(src='/js/konami.js')
+  script.
+    var easterEgg = new Konami(function() {
+      alert("Don't you just hate JavaScript alerts?")
+    });
+    easterEgg.load();
+
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-37701198-1']);
     _gaq.push(['_trackPageview']);
