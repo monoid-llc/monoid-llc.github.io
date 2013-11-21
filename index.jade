@@ -21,11 +21,14 @@ html
 
   script(src='/js/konami.js')
   script.
-    var easterEgg = new Konami(function() {
+    // Easter egg for all you snoopy folks.
+    var easterEgg = new Konami();
+    easterEgg.code = function() {
       alert("Don't you just hate JavaScript alerts?")
     });
     easterEgg.load();
 
+    // Google analytics
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-37701198-1']);
     _gaq.push(['_trackPageview']);

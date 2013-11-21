@@ -9,11 +9,14 @@ applications founded by <a href="http://whatit.is">this guy</a>.
 <p>...or just <a href="mailto:hi@monoid.io">email me</a>.
 
 </p>
-</p></section><footer></footer></div></body><script src="/js/konami.js"></script><script>var easterEgg = new Konami(function() {
+</p></section><footer></footer></div></body><script src="/js/konami.js"></script><script>// Easter egg for all you snoopy folks.
+var easterEgg = new Konami();
+easterEgg.code = function() {
   alert("Don't you just hate JavaScript alerts?")
 });
 easterEgg.load();
 
+// Google analytics
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-37701198-1']);
 _gaq.push(['_trackPageview']);
